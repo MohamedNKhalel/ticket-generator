@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title> Conference ticket generator</title>
+
+</head>
+<body>
+
+
+  <div class="main">
+    <div class="container">
+      <div class="logo mb-4 text-center">
+        <img src="./assets/images/logo-full.svg" alt="">
+      </div>
+      
+      <div class="data ">
+        <div class="headline ">
+          <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+          <p class="m-0">Secure your spot at next year's biggest coding conference.</p>
+        </div>
+        <div class="content">
+          <div class="row form">
+            <div class="col-12">
+              <div class="mt-3 d-flex flex-column">
+                <label for="avatar">Upload Avatar</label>
+                <div id="uploadArea" class="upload-container d-flex justify-content-center align-items-center flex-column">
+                  <div class="upload-icon">
+                    <img src="./assets/images/icon-upload.svg" alt="">
+                  </div>
+                  <div class="image-buttons d-flex  mt-3 gap-3 align-items-center flex-wrap justify-content-center d-none">
+                    <button id="removeBtn" type="button"><a class="text-white text-decoration-none border-bottom border-2">Remove Image</a></button>
+                    <button id="ChangeBtn" type="button">Change Image</button>
+                  </div>
+                  <p id="upload-text"  class="text-center">Drag and drop or click to upload</p>
+                  <input hidden id="avatar" type="file" title="avatar">
+                </div>
+                <div class="info mt-1 d-flex align-items-center gap-2">
+                  <img src="./assets/images/icon-info.svg" alt="">
+                  <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mt-3 d-flex flex-column">
+                <label for="fullNameInput">Full Name</label>
+                <input id="fullNameInput" type="text">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mt-3 d-flex flex-column">
+                <label for="email">Email Address</label>
+                <input placeholder="example@email.com" id="emailinput" type="text">
+                <div class="email-info mt-1 d-none d-flex align-items-center gap-2">
+                  <img src="./assets/images/icon-info.svg" alt="">
+                  <span class="text-danger">Please enter a valid email address</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mt-3 d-flex flex-column">
+                <label for="gitHub">GitHub Username</label>
+                <input placeholder="@yourusername" id="gitHub" type="text">
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="mt-3" type="button" id="generateBtn">Generate My Ticket</button>
+              <p class="text-danger text-center d-none err-Msg">All Data Required</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" ticket d-none">
+        <div class="congrats w-50 m-auto text-center pb-3">
+          <h1>Congrats, <span id="fullName">Full Name</span>! Your ticket is ready.</h1>
+          <p>We've emailed your ticket <br> to <span id="emailAddress">Email Address</span> and will send updates in <br> the run up to the event.</p>
+        </div>
+        <div class=" text-center  pt-lg-5">
+          <div class="design position-relative d-inline-block">
+            <img src="./assets/images/pattern-ticket.svg" class="w-100" alt="ticket">
+            <div class="position-absolute d-flex flex-column justify-content-between top-0 start-0 end-0 bottom-0 p-4">
+              <div class="ticket-head  ">
+                  <div class="logo-ticket d-flex align-items-center gap-2 ">
+                    <img src="./assets/images/logo-mark.svg" alt="">
+                    <h2 class="text-white fw-bold">Coding Conf</h2>
+                  </div>
+                  <span class="text-start d-block">Jan 31, 2025 / Austin, TX</span>
+              </div>  
+              <div class="ticket-footer d-flex align-items-center gap-2 gap-lg-3 ">
+                <img  id="userTicketImage" src="./assets/images/image-avatar.jpg" alt="">
+                <div class="person d-flex flex-column align-items-start">
+                  <h3 id="ticket-name">user</h3>
+                  <p><img src="./assets/images/icon-github.svg" alt=""> <span id="gitHubName">@githubusername</span></p>
+                </div>
+              </div>
+            </div>
+            <h4 class="ticket-number position-absolute ">#0100235</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="patterns">
+      <img class="bottom-pattern" src="./assets/images/pattern-squiggly-line-bottom.svg" alt="">
+      <img class="top-pattern" src="./assets/images/pattern-squiggly-line-top.svg" alt="">
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- Form ends -->
+
+  <!-- Generated tickets starts -->
+
+  <!--  -->
+
+  <!--  -->
+
+  <!-- Coding Conf -->
+  <!--  -->
+
+  <!-- Generated tickets ends -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

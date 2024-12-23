@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("../assets/images/background-desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main{
+    background-image: url("../assets/images/pattern-lines.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-block: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Inconsolata", serif;
+    font-optical-sizing: auto;
+}
+.headline{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 65%;
+    margin: auto;
+}
+.headline h1{
+    color: white;
+    font-size: 2.8125rem;
+    font-weight: 800;
+}
+.headline p{
+    color: rgba(255,255,255,.6);
+    font-size: 1.25rem;
+}
+.patterns{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.top-pattern,.bottom-pattern{
+    position: absolute;
+
+}
+.top-pattern{
+    top: 40px;
+    right: 0;
+}
+.bottom-pattern{
+    bottom: 0;
+}
+
+.form label{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+}
+.form input{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255,0.1);
+    border: solid 1px white;
+    color: white;
+    margin: 2px;
+}
+.upload-container{
+    overflow: hidden;
+    padding: 10px 50px;
+    background-color: rgb(255, 255, 255,0.1);
+    border-radius: 10px;
+    border:2px dashed gray;
+    cursor: pointer;
+
+}
+.upload-container:hover{
+    outline: solid white 2px;
+}
+.info span,.email-info span{
+    color: rgba(255,255,255,.6);
+    font-size: 12px;
+}
+.upload-container p{
+    color: rgba(255,255,255,.6);
+
+}
+
+.upload-icon{
+    background-color: rgb(255, 255, 255,0.11);
+    border-radius: 8px;
+    border: Ridge  rgb(255, 255, 255,0.5) 1px;
+    overflow: hidden;
+}
+.upload-icon img{
+    margin: 8px;
+    width: 30px;
+}
+
+.image-buttons button{
+    background-color: rgb(255, 255, 255,0.1);
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: white;
+    transition: all .3s ease; 
+}
+.image-buttons button:hover{
+    background-color: rgb(255, 255, 255,0.2);
+
+}
+#generateBtn{
+    background-color: hsl(7, 88%, 67%);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: hsl(248, 70%, 10%);
+    font-weight: 800;
+}
+.content{
+    width: 35%;
+    margin: auto;
+}
+
+.form input:focus{
+    box-shadow: 0px 0px 0px 3px white;
+    outline: solid black 2px;
+}
+/* start ticket */
+.congrats h1{
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+}
+.congrats p{
+    color: rgba(255,255,255,.6);
+    font-size: 1.25rem;
+}
+#fullName{
+    background-image: linear-gradient(to right,hsl(7, 86%, 67%), hsl(0, 0%, 100%),hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#emailAddress{
+    color: hsl(7, 71%, 60%);
+}
+.design img{
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+.design .ticket-head span{
+    color: rgb(255, 255, 255,0.7);
+    margin-left: 50px;
+}
+.ticket-footer img{
+    width: 80px;
+    border-radius: 10px;
+    
+}
+.ticket-footer .person h3{
+    color: white;
+    
+}
+.ticket-footer .person p{
+    color: rgba(255,255,255,.8);
+    display: flex;
+    align-items: center;
+    
+}
+.ticket-footer .person p img{
+    width: 25px !important;
+}
+.ticket-number{
+    right: 0;
+    transform: rotate(90deg);
+    top: 45%;
+    color: rgba(255,255,255,.3);
+}
+/* end ticket */
+
+@media screen and (max-width:768px) {
+    .headline{
+        width: 100%;
+    }
+    .headline h1{
+        font-size: 28px;
+
+    }
+    .container{
+        width: 95%;
+    }
+    .content{
+        width: 95%;
+    }
+    .top-pattern,.bottom-pattern{
+        width: 65%;
+    }
+    .ticket-head .logo-ticket img{
+        width: 35px;
+    }
+    .ticket-head span{
+        font-size: 12px;
+    }
+    .ticket-footer img{
+        width: 45px;
+    }
+    .ticket-footer .person h3{
+        font-size: 16px;
+        margin: 0;
+    }
+    .ticket-footer .person p{
+        font-size: 14px;
+        margin: 0;
+    }
+    .ticket-footer .person p img{
+        width: 20px;
+    }
+    .congrats{
+        width: 100% !important;
+    }
+    .congrats h1{
+        font-size: 35px;
+    }
+    .congrats p{
+        font-size: 24px;
+    }
+    .congrats p br{
+        display: none;
+    }
+    
+}
+
+
