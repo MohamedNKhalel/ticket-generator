@@ -50,7 +50,7 @@ body{
     right: 0;
     z-index: -1;
 }
-.top-pattern,.bottom-pattern{
+.top-pattern,.bottom-pattern,.circle-pattern1,.circle-pattern2{
     position: absolute;
 
 }
@@ -61,7 +61,10 @@ body{
 .bottom-pattern{
     bottom: 0;
 }
-
+.circle-pattern2{
+    bottom: 20%;
+    right: 150px;
+}
 .form label{
     color: hsl(0, 0%, 100%);
     margin-bottom: 5px;
@@ -238,7 +241,10 @@ body{
     .congrats p br{
         display: none;
     }
-    
+    .circle-pattern2{
+        bottom: 0;
+        right: 10px;
+    }
 }
 
 
